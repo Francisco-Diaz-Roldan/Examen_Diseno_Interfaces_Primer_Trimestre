@@ -22,7 +22,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen_diseno_interfaces_primer_trimestre.HelloController">
+<BorderPane maxHeight="600.0" maxWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.examen_diseno_interfaces_primer_trimestre.controller.HelloController">
    <top>
       <FlowPane alignment="CENTER" hgap="25.0" prefHeight="105.0" prefWidth="712.0" BorderPane.alignment="CENTER">
          <children>
