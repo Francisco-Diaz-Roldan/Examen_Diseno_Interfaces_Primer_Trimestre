@@ -9,6 +9,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.util.StringConverter;
 
 import java.net.URL;
@@ -56,7 +57,6 @@ public class HelloController implements Initializable {
     private RadioButton rbLargaDuracion;
 
     private ObservableList<Coche> observableListCoche = FXCollections.observableArrayList();
-    Coche coche = Sesion.getCocheActual();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -71,9 +71,12 @@ public class HelloController implements Initializable {
             comboCliente.getSelectionModel().selectFirst();
 
             ArrayList<Coche> coches = new ArrayList<>(0);
-            coches.add(new Coche("0123ABC", "Ford", clientes.get(0), "8€", LocalDate.of(2023, 12, 12), LocalDate.of(2023, 12, 13), 8));
-            coches.add(new Coche("789ACBC", "Ford",clientes.get(1), "8€", LocalDate.of(2023, 12, 12), LocalDate.of(2023, 12, 13), 8));
-            coches.add(new Coche("147DCB", "Ford", clientes.get(2), "8€", LocalDate.of(2023, 12, 12), LocalDate.of(2023, 12, 13), 8));
+            coches.add(new Coche("0123ABC", "Ford", clientes.get(0), "8€", LocalDate.of(2023,
+                    12, 12), LocalDate.of(2023, 12, 15), 8));
+            coches.add(new Coche("789ACBC", "Ford",clientes.get(1), "8€", LocalDate.of(2023,
+                    12, 12), LocalDate.of(2023, 12, 17), 8));
+            coches.add(new Coche("147DCB", "Ford", clientes.get(2), "8€", LocalDate.of(2023,
+                    12, 12), LocalDate.of(2023, 12, 11), 8));
             Sesion.setCoches(coches);
         }
 
@@ -87,10 +90,10 @@ public class HelloController implements Initializable {
         comboModelo.setItems(modelos);
         comboModelo.getSelectionModel().selectFirst();
 
-        comboCliente.setConverter(new StringConverter<Cliente>() {
+        comboCliente.setConverter(new StringConverter<>() {
             @Override
             public String toString(Cliente cliente) {
-                if(cliente!=null) return cliente.getNombre();
+                if (cliente != null) return cliente.getNombre();
                 else return null;
             }
 
@@ -188,8 +191,8 @@ public class HelloController implements Initializable {
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
-            alert.setHeaderText("Ha ocurrido un error.");
-            alert.setContentText("No se han rellenado todos los campos o seleccionado una tarifa");
+            alert.setHeaderText("Hay un error en el formulario.");
+            alert.setContentText("Falta información por indicar en el formulario");
             alert.showAndWait();
         }
     }
@@ -208,5 +211,13 @@ public class HelloController implements Initializable {
 
     public void salir(ActionEvent actionEvent) {
         System.exit(0);
+    }
+
+    public void mostrarMasInfo(MouseEvent mouseEvent) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Creado por");
+        alert.setHeaderText("Francisco Díaz Roldán");
+        alert.setContentText("Creado por Francisco Díaz Roldán 2ºDAM");
+        alert.showAndWait();
     }
 }
