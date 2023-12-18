@@ -5,16 +5,16 @@ import java.time.LocalDate;
 public class Coche {
     private String matricula;
     private String modelo;
-    private String Cliente;
+    private Cliente cliente;
     private String tarifa;
     private LocalDate fechaEntrada;
     private LocalDate fechaSalida;
     private int coste;
 
-    public Coche(String matricula, String modelo, String cliente, String tarifa, LocalDate fechaEntrada, LocalDate fechaSalida, int coste) {
+    public Coche(String matricula, String modelo, Cliente cliente, String tarifa, LocalDate fechaEntrada, LocalDate fechaSalida, int coste) {
         this.matricula = matricula;
         this.modelo = modelo;
-        Cliente = cliente;
+        this.cliente = cliente;
         this.tarifa = tarifa;
         this.fechaEntrada = fechaEntrada;
         this.fechaSalida = fechaSalida;
@@ -40,12 +40,12 @@ public class Coche {
         this.modelo = modelo;
     }
 
-    public String getCliente() {
-        return Cliente;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setCliente(String cliente) {
-        Cliente = cliente;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     public String getTarifa() {
@@ -85,11 +85,11 @@ public class Coche {
         return "Coche{" +
                 "matricula='" + matricula + '\'' +
                 ", modelo='" + modelo + '\'' +
-                ", Cliente='" + Cliente + '\'' +
+                ", cliente=" + cliente +
                 ", tarifa='" + tarifa + '\'' +
                 ", fechaEntrada=" + fechaEntrada +
                 ", fechaSalida=" + fechaSalida +
-                ", coste='" + coste + '\''+" €" +
+                ", coste=" + coste +
                 '}';
     }
 }

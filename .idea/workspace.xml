@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bac21367-bb93-4bec-bea6-c067e47d8102" name="Changes" comment="Ejercicios 1 y 3 finalizados. Faltan cosas del tema 2.Clases mapeadas, botón salir hecho." />
+    <list default="true" id="bac21367-bb93-4bec-bea6-c067e47d8102" name="Changes" comment="Entrega de las 3 de la tarde.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examen_diseno_interfaces_primer_trimestre/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examen_diseno_interfaces_primer_trimestre/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/examen_diseno_interfaces_primer_trimestre/models/Coche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/examen_diseno_interfaces_primer_trimestre/models/Coche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/examen_diseno_interfaces_primer_trimestre/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/examen_diseno_interfaces_primer_trimestre/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +49,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/pacod/Downloads/ExamenPrimerTrimestreDI-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702899468156</updated>
       <workItem from="1702899469177" duration="1427000" />
-      <workItem from="1702903076522" duration="4737000" />
+      <workItem from="1702903076522" duration="7813000" />
     </task>
     <task id="LOCAL-00001" summary="Ejercicios 1 y 3 finalizados. Faltan cosas del tema 2.Clases mapeadas, botón salir hecho.">
       <option name="closed" value="true" />
@@ -101,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702907824365</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Entrega de las 3 de la tarde.">
+      <option name="closed" value="true" />
+      <created>1702908180056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702908180056</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +123,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ejercicios 1 y 3 finalizados. Faltan cosas del tema 2.Clases mapeadas, botón salir hecho." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ejercicios 1 y 3 finalizados. Faltan cosas del tema 2.Clases mapeadas, botón salir hecho." />
+    <MESSAGE value="Entrega de las 3 de la tarde." />
+    <option name="LAST_COMMIT_MESSAGE" value="Entrega de las 3 de la tarde." />
   </component>
 </project>
